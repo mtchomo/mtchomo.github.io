@@ -1,33 +1,61 @@
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 10px;
-    background-color: #f4f4f4;
-  }
-  
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+h1 {
+  color: #8B0000;
+  font-size: 2.5em;
+}
+
+main {
+  padding: 20px;
+}
+
+.lyrics-stanza {
+  margin-bottom: 20px;
+  /* border: 1px solid #8B0000; */ /* 枠線は内側のpaddingで調整するのでコメントアウト */
+  padding: 20px; /* stanza全体のpadding */
+}
+
+
+.english, .japanese {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.japanese {
+  border: 1px solid #8B0000; /* 枠線を内側に移動 */
+  padding: 10px 20px; /* 上下10px、左右20pxのパディング */ /* パディングで枠線位置調整 */
+  margin: 0 auto 10px; /* 上下マージンを調整 */
+}
+
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px;
+  color: #8B0000;
+}
+
+@media (max-width: 600px) {
   .container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 95%;
   }
-  
-  h1 {
-    text-align: center;
-  }
-  
-  .song {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 10px;
-  }
-  
-  .song h2 {
-    margin-top: 0;
-  }
-  
-  pre {
-    white-space: pre-wrap; /* 折り返しできるように */
-    font-family: monospace;
-  }
+}

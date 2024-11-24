@@ -9,6 +9,9 @@ fetch('data.json')
       const englishLines = stanza.english.split('\n').map(line => `<p>${line.trim().replace(/\/n/g, '<br>')}</p>`).join('');
       const japaneseLines = stanza.japanese.split('\n').map(line => `<p>${line.trim().replace(/\/n/g, '<br>')}</p>`).join('');
 
+      // const englishLines = stanza.english.split('\n').join('');
+      // const japaneseLines = stanza.japanese.split('\n').join('');
+
       div.innerHTML = `
         <div class="english">${englishLines}</div>
         <div class="japanese">${japaneseLines}</div>
